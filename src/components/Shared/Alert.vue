@@ -1,0 +1,20 @@
+<template>
+  <v-alert error dismissible @input="onClose" :value="true">
+    {{text}}
+  </v-alert>
+</template>
+<script>
+export default {
+  data () {
+    return {
+
+    }
+  },
+  methods: {
+    props: ['text'],
+    onClose () {
+      this.$emit('dismissed')
+    }
+  }
+}
+</script>
