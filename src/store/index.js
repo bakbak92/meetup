@@ -7,6 +7,14 @@ Vue.use(Vuex)
 export const store = new Vuex.Store({
   state: {
     loadedMeetups: [
+      {
+        title: 'payload.title',
+        location: 'payload.location',
+        imageUrl: 'payload.imageUrl',
+        description: 'payload.description',
+        date: 'payload.date',
+        time: 'payload.time'
+      }
     ],
     user: null,
     loading: true,
